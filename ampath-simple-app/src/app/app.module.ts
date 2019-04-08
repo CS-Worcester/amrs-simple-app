@@ -5,12 +5,10 @@ import {MatToolbarModule} from '@angular/material/toolbar';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 
 import { AppComponent } from './app.component';
-import { SearchBarComponent } from './search-bar/search-bar.component';
 
 @NgModule({
   declarations: [
-    AppComponent,
-    SearchBarComponent
+    AppComponent
   ],
   imports: [
     BrowserModule,
