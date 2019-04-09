@@ -5,10 +5,12 @@ import {MatToolbarModule} from '@angular/material/toolbar';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 
 import { AppComponent } from './app.component';
+import { FormComponentComponent } from './form-component/form-component.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    FormComponentComponent
   ],
   imports: [
     BrowserModule,
