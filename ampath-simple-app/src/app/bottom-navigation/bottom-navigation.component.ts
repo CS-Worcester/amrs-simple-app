@@ -1,11 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-bottom-navigatiogn',
-  templateUrl: './bottom-navigatiogn.component.html',
-  styleUrls: ['./bottom-navigatiogn.component.css']
+  selector: 'app-bottom-navigation',
+  templateUrl: './bottom-navigation.component.html',
+  styleUrls: ['./bottom-navigation.component.css']
 })
-export class BottomNavigatiognComponent implements OnInit {
+export class BottomNavigationComponent implements OnInit {
 
   constructor() { }
 
