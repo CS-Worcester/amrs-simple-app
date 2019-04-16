@@ -28,7 +28,7 @@
   color: #000000;
 }
 
-.Button-Button {
+.button {
   width: 72px;
   height: 16px;
   font-family: Roboto;
@@ -54,13 +54,25 @@
   height: 52px;
 }
 
-.Start-Rectangle {
+.Start-Rectangle-Start {
   width: 14px;
   height: 14px;
   background-color: rgba(0, 0, 0, 0.38);
 }
 
-.Summary-Rectangle {
+.Start-Rectangle-Working {
+  width: 14px;
+  height: 14px;
+  background-color: #ffa000;
+}
+
+.Summary-Rectangle-Start {
+  width: 16px;
+  height: 16px;
+  background-color: rgba(0, 0, 0, 0.54);
+}
+
+.Summary-Rectangle-Working {
   width: 16px;
   height: 16px;
   background-color: #ffa000;
