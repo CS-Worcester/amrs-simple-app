@@ -1,15 +1,24 @@
-<html>
-<head>
-  <link rel="stylesheet" href ="bottom-navigation.component.css">
-</head>
+<igx-bottom-nav>
+  <igx-tab-panel label="Summary" icon="person">
+    <div>
+      This the summary
+    </div>
+  </igx-tab-panel>
+  <igx-tab-panel label="Start" icon="+">
+    <div>
+      <form action="/action_page.php">
+        First name:<br>
+        <input type="text" name="firstname" value="First Name"><br>
+        Last name:<br>
+        <input type="text" name="lastname" value="Last Name"><br>
+        Location:<br>
+        <input type="text" name="location" value="Location"><br>
+        Sex:<br>
+        <input type="text" name="sex" value="Sex"><br>
+        <br>
+        <input class="Submit-button" type="submit" value="Submit">
+      </form>
+    </div>
+  </igx-tab-panel>
+</igx-bottom-nav>
 
-<body>
-<p>
-  bottom-navigation works!
-</p>
-
-</body>
-<footer>
-  <button class="Resting-Bottom-Tools">Summary</button><button class="Resting-Bottom-Tools">Start</button>
-</footer>
-</html>

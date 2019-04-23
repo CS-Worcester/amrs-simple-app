@@ -1,18 +1,26 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
+import { IgxAvatarModule, IgxIconModule, IgxListModule, IgxBottomNavModule } from 'igniteui-angular';
 import { AppComponent } from './app.component';
-import { BottomNavigatiognComponent } from './bottom-navigatiogn/bottom-navigatiogn.component';
+import { BottomNavigationComponent } from './bottom-navigation/bottom-navigation.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
+  bootstrap: [AppComponent],
   declarations: [
     AppComponent,
-    BottomNavigatiognComponent
+    BottomNavigationComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    IgxAvatarModule,
+    IgxIconModule,
+    IgxListModule,
+    IgxBottomNavModule,
+    BrowserAnimationsModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  entryComponents: []
 })
-export class AppModule { }
+export class AppModule {
+}

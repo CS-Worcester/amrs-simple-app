@@ -1,6 +1,7 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { BottomNavigationComponent } from './bottom-navigation.component';
+
+import { BottomNavigationComponent } from '../bottom-navigation.component';
 
 describe('BottomNavigationComponent', () => {
   let component: BottomNavigationComponent;
