@@ -1,28 +1,5 @@
-<mat-drawer-container class="container" autosize>
-  <mat-drawer #drawer class="sidenav">
-      <br>
-      <br>
-      <br>
-      <button color="accent" mat-button routerLink="/hiv-care-lib">Clinic Flow</button>
-      <br>
-      <br>
-      <button color="accent" mat-button routerLink="/patient-search">Patient Search</button>
-      <br>
-      <br>
-      <button color="accent" mat-button routerLink="/patients-program-enrollment">Patients Program Enrollment</button>
-  </mat-drawer>
-  <div class="sidenav-content">
-      <mat-toolbar color="accent">
-          <mat-toolbar-row>
-              <button mat-icon-button (click)="drawer.toggle()">
-                  <mat-icon>menu</mat-icon>
-                </button>
+<!--The content below is only a placeholder and can be replaced.-->
+<mat-toolbar>
+  <span>My Application</span>
+</mat-toolbar>
 
-                <span>Ampath</span>
-                <span class="spacer"></span>
-          </mat-toolbar-row>
-        </mat-toolbar>
-
-  <router-outlet></router-outlet>
-</div>
-</mat-drawer-container>
