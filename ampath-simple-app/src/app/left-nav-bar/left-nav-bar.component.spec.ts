@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ClinicFlowComponent } from './clinic-flow.component';
+import { LeftNavBarComponent } from './left-nav-bar.component';
 
-describe('ClinicFlowComponent', () => {
-  let component: ClinicFlowComponent;
-  let fixture: ComponentFixture<ClinicFlowComponent>;
+describe('LeftNavBarComponent', () => {
+  let component: LeftNavBarComponent;
+  let fixture: ComponentFixture<LeftNavBarComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ ClinicFlowComponent ]
+      declarations: [ LeftNavBarComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(ClinicFlowComponent);
+    fixture = TestBed.createComponent(LeftNavBarComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

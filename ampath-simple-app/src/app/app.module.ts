@@ -1,3 +1,4 @@
+
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
@@ -10,16 +11,18 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { AppRoutingModule } from './app-routing.module';
 
 import { AppComponent } from './app.component';
+import { LeftNavBarComponent } from './left-nav-bar/left-nav-bar.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    LeftNavBarComponent
   ],
   imports: [
     BrowserModule,
-	AppRoutingModule,
+    AppRoutingModule,
     MatToolbarModule,
-	BrowserAnimationsModule,
+    BrowserAnimationsModule,
     MatButtonModule,
     MatIconModule,
     MatSidenavModule,

@@ -1,11 +1,2 @@
 /* You can add global styles to this file, and also import other style files */
-@import '~@angular/material/prebuilt-themes/pink-bluegrey.css';
-
-
-body {
-    font-family: Roboto, Arial, sans-serif;
-}
-
-p {
-    text-align: center;
-  }
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
