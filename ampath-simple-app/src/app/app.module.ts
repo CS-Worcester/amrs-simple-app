@@ -1,9 +1,10 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
-import {MatToolbarModule} from '@angular/material/';
-import {MatFormFieldModule} from '@angular/material/';
-import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import { MatToolbarModule } from '@angular/material/';
+import { MatFormFieldModule } from '@angular/material/';
+import { MatInputModule } from '@angular/material/input';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppComponent } from './app.component';
 import { FormComponentComponent } from './form-component/form-component.component';
@@ -17,8 +18,8 @@ import { FormComponentComponent } from './form-component/form-component.componen
     BrowserModule,
     MatToolbarModule,
     MatFormFieldModule,
-    BrowserAnimationsModule
-
+    BrowserAnimationsModule,
+    MatInputModule
   ],
   providers: [],
   bootstrap: [AppComponent]
