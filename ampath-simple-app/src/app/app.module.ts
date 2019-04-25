@@ -8,9 +8,8 @@ import {MatIconModule} from '@angular/material/icon';
 import {MatSidenavModule} from '@angular/material/sidenav';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 
-import { AppRoutingModule } from './app-routing.module';
-
 import { AppComponent } from './app.component';
+import { AppRoutingModule } from './app-routing.module';
 import { LeftNavBarComponent } from './left-nav-bar/left-nav-bar.component';
 
 @NgModule({
