@@ -8,6 +8,7 @@ branches:
   - master
 before_script:
   - npm install -g @angular/cli
+  
 script:
 - ng lint
 - ng build --prod --base-href https://github.com/cs-worcester-cs-448-sp-2019/amrs-simple-app
