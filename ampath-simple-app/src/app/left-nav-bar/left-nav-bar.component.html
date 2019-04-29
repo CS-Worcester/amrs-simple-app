@@ -3,6 +3,9 @@
       <br>
       <br>
       <br>
+      <button color = "accent" mat-button routerLink="/home-page" (click)="drawer.toggle()">Home</button>
+      <br>
+      <br>
       <button color="accent" mat-button routerLink="/hiv-care-lib" (click)="drawer.toggle()">Clinic Flow</button>
       <br>
       <br>
@@ -22,7 +25,7 @@
                 <span class="spacer"></span>
           </mat-toolbar-row>
         </mat-toolbar>
-
   <router-outlet></router-outlet>
 </div>
 </mat-drawer-container>
+

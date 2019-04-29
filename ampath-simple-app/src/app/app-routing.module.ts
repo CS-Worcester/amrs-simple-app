@@ -15,8 +15,12 @@ const routes: Routes = [
         loadChildren:'./patients-program-enrollment/patients-program-enrollment.module#PatientsProgramEnrollmentModule'
     },
     {
+        path:'home-page',
+        loadChildren:'./home-page/home-page.module#HomePageModule'
+    },
+    {
         path: '',
-        redirectTo: '',
+        redirectTo: '/home-page',
         pathMatch: 'full'
     }
 ];
