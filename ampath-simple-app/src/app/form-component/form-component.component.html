@@ -13,6 +13,7 @@
   </div>
 
   <body>  
+    <div>
     <p>
       <mat-form-field appearance="outline">
         <input matInput placeholder="Label">
@@ -43,7 +44,7 @@
         <mat-hint>Assistive Text</mat-hint>
       </mat-form-field>
     </p>
-
-    <button mat-stroked-button>Submit</button>
+    <button (click)="openDialog()" mat-stroked-button>Submit</button>
+    </div>
   </body>
 </html>

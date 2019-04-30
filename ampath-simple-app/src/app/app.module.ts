@@ -5,6 +5,7 @@ import { MatToolbarModule } from '@angular/material/';
 import { MatFormFieldModule } from '@angular/material/';
 import { MatInputModule } from '@angular/material/input';
 import { MatButtonModule } from '@angular/material/button';
+import { MatDialogModule } from '@angular/material/dialog';
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
@@ -21,6 +22,7 @@ import { FormComponentComponent } from './form-component/form-component.componen
     MatToolbarModule,
     MatFormFieldModule,
     MatButtonModule,
+    MatDialogModule,
     BrowserAnimationsModule,
     MatInputModule
   ],
