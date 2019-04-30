@@ -1,0 +1,62 @@
+<div>
+  <button mat-raised-button
+          class="example-add-tab-button">
+    Add new tab
+  </button>
+
+  <button mat-raised-button
+          class="example-delete-tab-button"
+          [disabled]="tabs.length === 1"
+          (click)="removeTab(index)"
+          (click)="addTab(selectAfterAdding.checked)">
+    Delete Tab
+  </button>
+  <mat-checkbox #selectAfterAdding> Select tab after adding </mat-checkbox>
+
+</div>
+
+<mat-tab-group [selectedIndex]="selected.value"
+               (selectedIndexChange)="selected.setValue($event)">
+  <mat-tab *ngFor="let tab of tabs; let index = index" [label]="tab">
+    <ng-template mat-tab-label>
+      <div>
+        <span>{{tabName}}</span>
+      </div>
+    </ng-template>
+
+    <div class="example-container">
+      <mat-form-field>
+        <input matInput placeholder="First Name">
+      </mat-form-field>
+
+      <mat-form-field>
+        <input matInput placeholder="Last Name">
+      </mat-form-field>
+
+      <mat-form-field>
+        <textarea matInput placeholder="Input"></textarea>
+      </mat-form-field>
+
+      <mat-form-field>
+        <mat-select placeholder="Gender">
+          <mat-option value="Option">Female</mat-option>
+          <mat-option value="Option">Male</mat-option>
+          <mat-option value="Option">Non Binary</mat-option>
+          <mat-option value="Option">Prefer not to answer</mat-option>
+        </mat-select>
+      </mat-form-field>
+
+      <mat-form-field>
+        <input matInput [matDatepicker]="picker" placeholder="Birth Date">
+        <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+        <mat-datepicker #picker></mat-datepicker>
+      </mat-form-field>
+
+      <mat-form-field>
+        <input matInput placeholder="Enter your email" [formControl]="email" required>
+        <mat-error *ngIf="email.invalid">{{getErrorMessage()}}</mat-error>
+      </mat-form-field>
+
+    </div>
+  </mat-tab>
+</mat-tab-group>
