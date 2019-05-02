@@ -19,7 +19,7 @@ import { IgxAvatarModule, IgxIconModule, IgxListModule, IgxBottomNavModule } fro
   bootstrap: [AppComponent],
   declarations: [
     AppComponent,
-    TabsComponent
+    TabsComponent,
     BottomNavigationComponent
 ],
   imports: [
@@ -44,7 +44,6 @@ import { IgxAvatarModule, IgxIconModule, IgxListModule, IgxBottomNavModule } fro
   providers: [
     MatNativeDateModule,
   ],
-  bootstrap: [AppComponent]
 })
 export class AppModule { }
 
