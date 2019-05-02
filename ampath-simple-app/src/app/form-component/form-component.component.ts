@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {MatDialog, MatDialogRef, MAT_DIALOG_DATA} from '@angular/material';
 
 @Component({
   selector: 'app-form-component',
@@ -11,6 +12,11 @@ export class FormComponentComponent implements OnInit {
 
   ngOnInit() {
   }
+
+  openDialog(): void {
+    const dialogRef = this.dialog.open(DialogOverviewExampleDialog, {
+      width: '250px'
+    });
 
 }
 
