@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { MatDialog, MatDialogRef, MAT_DIALOG_DATA } from '@angular/material';
+import { DialogService } from '../dialog.service';
 
 @Component({
   selector: 'app-form-component',
@@ -8,16 +9,15 @@ import { MatDialog, MatDialogRef, MAT_DIALOG_DATA } from '@angular/material';
 })
 export class FormComponentComponent implements OnInit {
 
-  constructor() { }
+  constructor(private dialogService: DialogService) { }
 
   ngOnInit() {
   }
 
-  openDialog(): void {
-    const dialogRef = this.dialog.open(DialogOverviewExampleDialog, {
-      width: '250px'
-    });
-
+  openCloseFormDialog(): void {
+    this.dialogService.openCloseFormDialog();
   }
 
+
+  
 }

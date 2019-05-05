@@ -11,11 +11,13 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppComponent } from './app.component';
 import { FormComponentComponent } from './form-component/form-component.component';
+import { CloseFormDialogComponent } from './close-form-dialog/close-form-dialog.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    FormComponentComponent
+    FormComponentComponent,
+    CloseFormDialogComponent
   ],
   imports: [
     BrowserModule,
@@ -27,6 +29,7 @@ import { FormComponentComponent } from './form-component/form-component.componen
     MatInputModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  entryComponents: [CloseFormDialogComponent]
 })
 export class AppModule { }
