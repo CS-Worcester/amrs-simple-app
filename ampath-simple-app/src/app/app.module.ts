@@ -1,7 +1,6 @@
 
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatButtonModule} from '@angular/material/button';
 import {MatIconModule} from '@angular/material/icon';
@@ -20,25 +19,19 @@ import { ReactiveFormsModule} from '@angular/forms';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatDatepickerModule} from '@angular/material/datepicker';
 import {MatNativeDateModule} from '@angular/material';
-
+import { BottomNavigationComponent } from './bottom-navigation/bottom-navigation.component';
+import { IgxAvatarModule, IgxIconModule, IgxListModule, IgxBottomNavModule } from 'igniteui-angular';
 
 @NgModule({
+  bootstrap: [AppComponent],
   declarations: [
     AppComponent,
+    TabsComponent,
+    BottomNavigationComponent,
     LeftNavBarComponent
   ],
   imports: [
-    BrowserModule,
     AppRoutingModule,
-    MatToolbarModule,
-    BrowserAnimationsModule,
-    MatButtonModule,
-    MatIconModule,
-    MatSidenavModule,
-    MatToolbarModule,
-    TabsComponent
-],
-  imports: [
     BrowserModule,
     FormsModule,
     MatTabsModule,
@@ -47,15 +40,22 @@ import {MatNativeDateModule} from '@angular/material';
     MatInputModule,
     MatSelectModule,
     ReactiveFormsModule,
+    MatButtonModule,
+    MatIconModule,
     MatCheckboxModule,
     MatToolbarModule,
+    MatSidenavModule,
     MatDatepickerModule,
-    MatNativeDateModule
+    MatNativeDateModule,
+    IgxAvatarModule,
+    IgxIconModule,
+    IgxListModule,
+    IgxBottomNavModule,
+    TabsComponent
   ],
   providers: [
     MatNativeDateModule,
   ],
-  bootstrap: [AppComponent]
 })
 export class AppModule { }
 
