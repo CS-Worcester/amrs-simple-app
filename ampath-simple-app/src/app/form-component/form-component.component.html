@@ -1,0 +1,55 @@
+<html>
+<header>
+  <link type="styles/css" href="form-component.component.css">
+</header>
+
+<body>
+  <div>
+    <button mat-button>
+        <i class="material-icons">
+          arrow_back_ios
+        </i>
+      </button>
+  </div>
+  <div>
+    <!-- {{}} placeholder for firstname, lastname -->
+  </div>
+
+  <div>
+    <p>
+      <mat-form-field appearance="outline">
+        <input matInput placeholder="Label">
+        <mat-hint>Assistive Text</mat-hint>
+      </mat-form-field>
+    </p>
+    <p>
+      <mat-form-field appearance="outline">
+        <input matInput placeholder="Label">
+        <mat-hint>Assistive Text</mat-hint>
+      </mat-form-field>
+    </p>
+    <p>
+      <mat-form-field appearance="outline">
+        <input matInput placeholder="Label">
+        <mat-hint>Assistive Text</mat-hint>
+      </mat-form-field>
+    </p>
+    <p>
+      <mat-form-field appearance="outline">
+        <input matInput placeholder="Label">
+        <mat-hint>Assistive Text</mat-hint>
+      </mat-form-field>
+    </p>
+    <p>
+      <mat-form-field appearance="outline">
+        <input matInput placeholder="Label">
+        <mat-hint>Assistive Text</mat-hint>
+      </mat-form-field>
+    </p>
+    <div align="end">
+      <button (click)="openCloseFormDialog()" mat-stroked-button>Submit</button>
+    </div>
+  </div>
+</body>
+
+</html>
