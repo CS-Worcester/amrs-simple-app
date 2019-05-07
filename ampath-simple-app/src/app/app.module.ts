@@ -27,7 +27,8 @@ import { MatNativeDateModule } from '@angular/material';
     AppComponent,
     FormComponentComponent,
     CloseFormDialogComponent,
-    LeftNavBarComponent
+    LeftNavBarComponent,
+    TabsComponent
   ],
   imports: [
     AppRoutingModule,
@@ -35,7 +36,6 @@ import { MatNativeDateModule } from '@angular/material';
     MatButtonModule,
     MatIconModule,
     MatSidenavModule,
-    TabsComponent,
     BrowserModule,
     FormsModule,
     MatTabsModule,
